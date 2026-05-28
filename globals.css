@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800;900&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #F7F5F2;
+  --surface: #FFFFFF;
+  --card: #FAFAF8;
+  --border: #E8E4DE;
+  --green: #2D6A4F;
+  --green-light: #D8F3DC;
+  --green-mid: #52B788;
+  --accent: #1A1A1A;
+  --muted: #8A8680;
+  --text: #1A1A1A;
+  --text-soft: #5A5550;
+  --danger: #C0392B;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fadeUp 0.4s ease forwards; }
